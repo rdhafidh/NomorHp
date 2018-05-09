@@ -63,7 +63,7 @@ HEADERS  += mainwindow.h tabwidgetutama.h \
     hapusbyimportdatanomordimaster.h
 
 win32*{
-INCLUDEPATH += D:\masteraplikasi\transferh11nov\cpp-peglibsvn\4
+INCLUDEPATH += .
 
 }
 
