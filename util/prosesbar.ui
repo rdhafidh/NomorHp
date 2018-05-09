@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>prosesbar</class>
+ <widget class="QDialog" name="prosesbar">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>68</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Proses Berlangsung...</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QProgressBar" name="progressBar">
+       <property name="maximum">
+        <number>0</number>
+       </property>
+       <property name="value">
+        <number>-1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QToolButton" name="toolButton_cancel_berlangsung">
+       <property name="toolTip">
+        <string>Cancel Prosses yang sudah berlangsung</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/res/edit-delete.png</normaloff>:/res/edit-delete.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_msg">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

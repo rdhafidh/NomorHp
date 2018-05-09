@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormTableView</class>
+ <widget class="QWidget" name="FormTableView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" colspan="7">
+      <widget class="TableViewEdit" name="tableView">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>254</height>
+        </size>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QToolButton" name="toolButton_rightmost">
+       <property name="text">
+        <string>&gt;|</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/res/ic_last_page_black_48dp.png</normaloff>:/res/ic_last_page_black_48dp.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QToolButton" name="toolButton_leftmost">
+       <property name="text">
+        <string>|&lt;</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/res/ic_first_page_black_48dp.png</normaloff>:/res/ic_first_page_black_48dp.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="6">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_infohalaman">
+       <property name="text">
+        <string>%1 dari %2 </string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QToolButton" name="toolButton_right">
+       <property name="text">
+        <string>&gt;</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/res/ic_chevron_right_black_48dp.png</normaloff>:/res/ic_chevron_right_black_48dp.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QToolButton" name="toolButton_left">
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/res/ic_chevron_left_black_48dp.png</normaloff>:/res/ic_chevron_left_black_48dp.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TableViewEdit</class>
+   <extends>QTableView</extends>
+   <header>tableviewedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

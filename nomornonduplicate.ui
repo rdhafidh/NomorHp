@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NomorNonDuplicate</class>
+ <widget class="QWidget" name="NomorNonDuplicate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="1">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="3">
+      <widget class="QComboBox" name="comboBox_cari_kategori_nomor_nested">
+       <property name="minimumSize">
+        <size>
+         <width>121</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>10 Nomor Digit</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nomor Cantik</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nomor Acak</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="6">
+      <widget class="FormTableView" name="formTableView"/>
+     </item>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBox_cari_kategori_nomor">
+       <property name="minimumSize">
+        <size>
+         <width>121</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>10 Nomor Digit</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nomor Cantik</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nomor Acak</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Per Provider</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLineEdit" name="lineEdit_cari_nomor">
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="pushButton_cari_nomor">
+       <property name="text">
+        <string>Cari</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="comboBox_cari_operator">
+       <property name="minimumSize">
+        <size>
+         <width>121</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AXIS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Indosat</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Telkomsel</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>XL</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FormTableView</class>
+   <extends>QWidget</extends>
+   <header>formtableview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

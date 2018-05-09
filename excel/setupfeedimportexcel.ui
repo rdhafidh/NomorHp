@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupFeedImportExcel</class>
+ <widget class="QWizardPage" name="SetupFeedImportExcel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Input Pilihan File Excel</string>
+  </property>
+  <property name="subTitle">
+   <string>Anda bisa memilih file excel bertipe .xlsx</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Isilah semua keterangan input berikut, lalu klik Import Excel.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QGroupBox" name="groupBox_export1">
+       <property name="title">
+        <string>Input Control Cell Kolom Excel</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>363</width>
+               <height>107</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0" rowspan="2">
+               <layout class="QGridLayout" name="gridLayout_inputcontrol">
+                <item row="0" column="2">
+                 <widget class="QToolButton" name="toolButton_namafiletoimport">
+                  <property name="text">
+                   <string>Pilih Nama File</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../desainmenu/menuicon.qrc">
+                    <normaloff>:/white/ic_folder_open_white_48dp.png</normaloff>:/white/ic_folder_open_white_48dp.png</iconset>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_importexcel">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>Nama File Excel</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <widget class="QToolButton" name="toolButton_doimportexcel">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Import Excel</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../desainmenu/menuicon.qrc">
+         <normaloff>:/white/ic_send_white_48dp.png</normaloff>:/white/ic_send_white_48dp.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../desainmenu/menuicon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

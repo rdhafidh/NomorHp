@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HalamanPage</class>
+ <widget class="QWidget" name="HalamanPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="5">
+            <widget class="QPushButton" name="pushButton_cari">
+             <property name="text">
+              <string>Cari</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/res/system-search.png</normaloff>:/res/system-search.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QComboBox" name="comboBox_cari_provider">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLineEdit" name="lineEdit_inputcari">
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0" colspan="6">
+            <widget class="FormTableView" name="formTableView" native="true"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox_kategori">
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>0</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>10 Nomer Digit</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nomer Cantik</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nomor Acak</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Per Cluster</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Per Provider</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QComboBox" name="comboBox_kategori_nomor">
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>0</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>10 Nomor Digit</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nomor Cantik</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nomor Acak</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Input Nomor</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="2">
+                 <widget class="QLineEdit" name="lineEdit_inputnomor">
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="2">
+                 <widget class="QLabel" name="label_2">
+                  <property name="text">
+                   <string>Cluster</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>Input Nomor</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="pushButton_cancel">
+                  <property name="text">
+                   <string>Cancel</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QPushButton" name="pushButton_simpan">
+                  <property name="text">
+                   <string>Simpan</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLineEdit" name="lineEdit_kota">
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FormTableView</class>
+   <extends>QWidget</extends>
+   <header>formtableview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

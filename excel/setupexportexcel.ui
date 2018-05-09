@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupExportExcel</class>
+ <widget class="QWizardPage" name="SetupExportExcel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>478</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Import Data File Excel</string>
+  </property>
+  <property name="subTitle">
+   <string>Isikan ketentuan dengan keterangan berikut</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_judultabel">
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="0">
+      <widget class="QToolButton" name="toolButton_doexport">
+       <property name="text">
+        <string>Export Excel</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/white/ic_send_white_48dp.png</normaloff>:/white/ic_send_white_48dp.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Judul Tabel pada Excel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="checkBox_gunakan_62">
+       <property name="text">
+        <string>Memakai Awalan Angka 62 Pada Setiap Nomor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Pilih nama file tujuan export data ke excel. Lalu klik Export Excel. Ketika sedang process export &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;berlangsung &lt;span style=&quot; font-weight:600;&quot;&gt;tidak bisa dibatalkan&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="comboBox_mode_export_is_csv_or_excel">
+       <item>
+        <property name="text">
+         <string>Export CSV (Lebih Cepat)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Export Excel</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Mode Export</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupImportExcel</class>
+ <widget class="QWizardPage" name="SetupImportExcel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Keterangan Petunjuk Import Excel.</string>
+  </property>
+  <property name="subTitle">
+   <string>Anda kami mohon untuk membaca terlebih dahulu panduan dengan keterangan yang ada berikut ini.</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_headerket">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Untuk catatan bahwa&lt;/span&gt;: Pastikan data anda dalam cell pada lembar sheet &lt;/p&gt;&lt;p&gt;excel tidak memuat rumus. Kami akan otomatis mendeteksi jika terdapat &lt;/p&gt;&lt;p&gt;suatu nilai cell berawalan tanda &amp;quot;=&amp;quot; (sama dengan), lalu aplikasi secara otomatis &lt;/p&gt;&lt;p&gt;memberhentikan proses import data dari excel. Sebagai tips anda bisa gunakan &lt;/p&gt;&lt;p&gt;fasilitas kopi lalu &amp;quot;paste spesial&amp;quot; pilih &lt;span style=&quot; font-weight:600;&quot;&gt;values&lt;/span&gt; untuk aplikasi MS Excel dan fasilitas &lt;/p&gt;&lt;p&gt;&amp;quot;paste spesial&amp;quot; pilih &lt;span style=&quot; font-weight:600;&quot;&gt;numbers &lt;/span&gt;saja untuk aplikasi LibreOffice Excel jika data &lt;/p&gt;&lt;p&gt;asli anda dalam excel memiliki banyak rumus. &lt;br/&gt;&lt;br/&gt;Data tabel &lt;span style=&quot; font-weight:600;&quot;&gt;%1&lt;/span&gt; membutuhkan sejumlah &lt;span style=&quot; font-weight:600;&quot;&gt;%2&lt;/span&gt; kolom input data. &lt;/p&gt;&lt;p&gt;Pastikan anda memenuhi input kolom seluruhnya berikut ini: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTextEdit" name="label_kolomrincian">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
