@@ -3,6 +3,7 @@
 
  Cross-platform Aplikasi Manejemen Nomor HP.
  
+![](https://raw.githubusercontent.com/rdhafidh/NomorHp/master/res/contoh.png)
  
 # Lisensi pihak ketiga yang digunakan
 
